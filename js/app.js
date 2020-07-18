@@ -22,14 +22,14 @@ const getPokemon = () => {
 }
 
 const renderPokemon = (pokemon) => {
-  console.log(pokemon);
+  //console.log(pokemon);
   const pokemonDisplay = pokemon.map((poke) => `
   <div class="col-lg-4" data-aos="fade-up">
     <div class="service service-style-1">
       <img src="${poke.image}" alt="Services" />
-      <h5 class="service-title">${poke.name}</h5>
-      <span class="service-text">${poke.type}</span>
-      <label>Weigth</label>
+      <h5 class="service-title">Name : <strong>${poke.name}</strong></h5>
+      <span class="service-text">Type : <strong>${poke.type}</strong></span>
+      <label>Heigth</label>
       <div class="progress">
         <div class="progress-bar progress-bar-striped bg-default" role="progressbar" style="width: ${poke.height}%;" aria-valuenow="${poke.height}" aria-valuemin="0" aria-valuemax="100">${poke.height}%</div>
       </div>
